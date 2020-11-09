@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PopStars</string>
+    <string name="on_back_to_exit_expressed">再按一次退出游戏</string>
+    <string name="title_alert">提示信息</string>
+    <string name="exit_save_game">退出保存</string>
+    <string name="exit_game">退出游戏</string>
+    <string name="message_hint">退出游戏返回主界面\n退出保存游戏后下次可以继续游戏</string>
+    <string name="hint">提示</string>
+    <string name="about_game">1.该游戏为个人爱好开发\n2.减少广告提升用户体验\n3.邮箱:3287477449@qq.com\n
+    </string>
+
+</resources>

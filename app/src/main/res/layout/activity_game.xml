@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/state_bar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_hiscore"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/pause_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/open_voice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+
+        <com.example.view.ScoreTextView
+            android:id="@+id/highest_score_view_game"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.example.view.ScoreTextView
+            android:id="@+id/level_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp" />
+
+        <com.example.view.ScoreTextView
+            android:id="@+id/target_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"/>
+
+        <com.example.view.ScoreTextView
+            android:id="@+id/current_score_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/break_star_score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 块 0 分"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/state_bar"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

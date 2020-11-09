@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_hiscore"
+        >
+
+        <ImageView
+            android:id="@+id/sound_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/open_voice"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true" />
+
+        <com.example.view.ScoreTextView
+            android:id="@+id/highest_score_view"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:src="@drawable/popstar" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="100dp"
+    android:paddingRight="100dp"
+    android:paddingTop="40dp">
+
+    <Button
+        android:id="@+id/btn_start_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始游戏"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@drawable/button"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btn_resume_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="继续游戏"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@drawable/button"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/btn_start_game"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_about_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="关于游戏"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:layout_below="@id/btn_resume_game"
+        android:textStyle="bold"/>
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!--set是一个容器，可以包含若干个动画
+    translate 平移动画
+    scale     缩放动画
+    rotate    旋转动画
+    alpha     透明度动画-->
+    <translate
+        android:fromXDelta="0%p"
+        android:toXDelta="20%p"
+        android:fromYDelta="0%p"
+        android:toYDelta="20%p"
+        android:duration="4000"/>
+
+</set>
